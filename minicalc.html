@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="firstnumber" type="number" placeholder="enter 1st Number" />
+    <input id="secondnumber" type="number" placeholder="enter 2nd Number" />
+    <button onClick="addition()" id="addition">Add</button>
+    <button onClick="subtraction()" id="subtraction">Subtract</button>
+    <button onClick="multiplication()" id="multiplication">Multiply</button>
+    <button onClick="division()" id="division">Divide</button>
+    <p id="result">Display Result Here</p>
+  </body>
+</html>
+<script>
+  function addition() {
+    let a = document.getElementById("firstnumber").value;
+    let b = document.getElementById("secondnumber").value;
+    let x = Number(a);
+    let y = Number(b);
+    document.getElementById("result").innerText = x + y;
+  }
+  function subtraction() {
+    let a = document.getElementById("firstnumber").value;
+    let b = document.getElementById("secondnumber").value;
+    let x = Number(a);
+    let y = Number(b);
+    document.getElementById("result").innerText = x - y;
+  }
+  function multiplication() {
+    let a = document.getElementById("firstnumber").value;
+    let b = document.getElementById("secondnumber").value;
+    let x = Number(a);
+    let y = Number(b);
+    document.getElementById("result").innerText = x * y;
+  }
+  function division() {
+    let a = document.getElementById("firstnumber").value;
+    let b = document.getElementById("secondnumber").value;
+    let x = Number(a);
+    let y = Number(b);
+    document.getElementById("result").innerText = x / y;
+  }
+</script>
